@@ -5,14 +5,13 @@ let tbClient = require('./tb-client/tb-client');
 let tcpConverter = require('./converter/converter');
 let logger = require('./utils/log4j').getLogger('gateway');
 
- const TCP_HOST = "127.0.0.1"; // 本地TCP网络调试助手的地址
- const TCP_PORT = "8888";     // 本地TCP网络调试助手的端口
+const TCP_HOST = '127.0.0.1'; // 本地TCP网络调试助手的地址
+const TCP_PORT = '8888'; // 本地TCP网络调试助手的端口
 
 const TB_PATH = 'mqtt://192.168.10.6:2883';
-const Dev_ID = 'boris_test_gw';
-const Dev_Token = 'J50QITAW4ga8U8uhU5ES';//Gateway_Token
+const Dev_ID = 'RZyQF9Sw37bfgHw5kuk1';
+const Dev_Token = 'ifgyzUzWat3VA4HMRaNU'; //Gateway_Token
 const IntervalTime = 2 * 1000;
-
 
 // tb消息处理
 let tbMsgHandle = function (topic, msg) {
@@ -42,7 +41,7 @@ setInterval(() => {
 				},
 			},
 		],
-		"deviceD": [
+		deviceD: [
 			{
 				ts: new Date().getTime(),
 				values: {
