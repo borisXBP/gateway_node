@@ -8,9 +8,9 @@ let logger = require('./utils/log4j').getLogger('gateway');
 const TCP_HOST = '127.0.0.1'; // 本地TCP网络调试助手的地址
 const TCP_PORT = '8888'; // 本地TCP网络调试助手的端口
 
-const TB_PATH = 'mqtt://192.168.10.6:2883';
-const Dev_ID = 'RZyQF9Sw37bfgHw5kuk1';
-const Dev_Token = 'ifgyzUzWat3VA4HMRaNU'; //Gateway_Token
+const TB_PATH = 'mqtt://192.168.10.6:2883'; // 由后端文件写明的网关地址和端口
+const Dev_ID = 'RZyQF9Sw37bfgHw5kuk1'; // 设备的访问令牌（必须为网关设备）
+const Dev_Token = 'ifgyzUzWat3VA4HMRaNU'; //Gateway_Token （网关的ID）
 const IntervalTime = 2 * 1000;
 
 // tb消息处理
