@@ -4,6 +4,8 @@ let tcpConnector = require('./connector/tcp-connector');
 let tbClient = require('./tb-client/tb-client');
 let tcpConverter = require('./converter/converter');
 let logger = require('./utils/log4j').getLogger('gateway');
+let bee = require('boris-xie-bee');
+console.log("bee",bee.borisFunc())
 
 const TCP_HOST = '127.0.0.1'; // 本地TCP网络调试助手的地址
 const TCP_PORT = '8888'; // 本地TCP网络调试助手的端口
